@@ -13,3 +13,7 @@ def home(request):
     return render(request,'chat/base.html',context=context)
 
 
+def msg_view(request):
+    context={}
+
+    return render(request,'chat/msg.html',context=context)

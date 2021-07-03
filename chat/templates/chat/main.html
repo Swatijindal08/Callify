@@ -6,6 +6,14 @@
 <head>
     <meta charset="UTF-8">
     <title>MicorsoftEngage</title>
+    <style>
+        body {
+            background-image: url("/static/images/third.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+        }
+    </style>
     <link rel="stylesheet" type="text/css"  href="{% static 'css/main.css' %}">
 </head>
 <body>
@@ -22,7 +30,7 @@
         </div>
     
 
-        <div id="chat">
+        <div id="chat" class="jumbotron">
             <h3>Chat</h3>
             <div id="messages">
                 <ul id="message-list"></ul>
