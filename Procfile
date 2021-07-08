@@ -1,1 +1,1 @@
-web: gunicorn teamsClone.wsgi --log-file -
+web: gunicorn teamsClone.wsgi 
