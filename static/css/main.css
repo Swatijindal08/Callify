@@ -1,15 +1,25 @@
 .video-grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    background-color: black;
+    background-color: rgb(3, 3, 49);
 }
 
 .main-grid-container {
     display: grid;
+    padding-left: 75px; 
     grid-template-columns: 60% 20%;
 }
 
 video{
     border-radius: 25%;
+    
     background-color: black;
 }
+
+body {
+    padding: 50px;
+    padding-left: 75px; 
+    background-color: darkblue;
+    color: wheat;
+    font-size: 25px;
+  }

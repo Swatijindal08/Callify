@@ -10,7 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os
-import django_heroku
+
 from pathlib import Path
 
 
@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-o2%tf@98-&yuw)n+^%7@keowqudecy@3pp9^p78d9k7pr6==%m
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [*]
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -125,7 +125,7 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [BASE_DIR/"static"]
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
@@ -140,6 +140,5 @@ CHANNEL_LAYERS = {
     }
 }
 
-django_heroku.settings(locals())
 
 
